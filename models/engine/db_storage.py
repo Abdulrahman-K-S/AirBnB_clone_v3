@@ -16,6 +16,15 @@ import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
+name2class = {
+    'Amenity': Amenity,
+    'City': City,
+    'Place': Place,
+    'State': State,
+    'Review': Review,
+    'User': User
+}
+
 classes = {"Amenity": Amenity, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
 
